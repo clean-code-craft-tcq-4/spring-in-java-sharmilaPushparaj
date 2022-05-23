@@ -12,7 +12,7 @@ public class StatsChecker{
           this.alerters=alerters;
         }
         
-        public void checkAndAlert(List<float> numbers){
+        public void checkAndAlert(List<Float> numbers){
            float max=numbers.get(0);
            for(int i=0;i<numbers.size();i++){
                 if(max<numbers.get(i))
