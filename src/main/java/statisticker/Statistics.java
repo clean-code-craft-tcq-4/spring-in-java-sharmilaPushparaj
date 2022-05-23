@@ -17,14 +17,17 @@ public class Statistics
             Float minTemp=numbers.get(0);
             for(int ii=0;ii<numbers.size();ii++){
                 result+=numbers.get(ii);
-                if(numbers.get(ii)>maxTemp)
+                if(numbers.get(ii)>maxTemp){
                     maxTemp=numbers.get(ii);
-                else if (numbers.get(ii)<minTemp)
+                }
+                else if (numbers.get(ii)<minTemp){
                     minTemp=numbers.get(ii);
+                }
                 s.average= result/numbers.size();
                 s.max=maxTemp;
                 s.min=minTem;
             }
         }
         return s;
+    }
 }
