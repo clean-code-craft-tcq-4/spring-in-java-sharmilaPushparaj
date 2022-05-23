@@ -30,7 +30,7 @@ public class Statistics
                 }
                 s.average= result/numbers.size();
                 s.max=maxTemp;
-                s.min=minTem;
+                s.min=minTemp;
             }
         }
         return s;
