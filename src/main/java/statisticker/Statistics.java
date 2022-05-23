@@ -7,10 +7,10 @@ public class Statistics
     public static Stats getStatistics(List<Float> numbers) {
         //implement the computation of statistics here
         Statistics statistics = new Statistics();
-        Statistics.Stats stats= statistics.new Stats();
-        stats.average=Float.NAN;
-        stats.maximum=Float.NAN;
-        stats.minimum=Float.NAN;
+        Statistics.Stats s= statistics.new Stats();
+        s.average=Float.NAN;
+        s.max=Float.NAN;
+        s.min=Float.NAN;
         if(numbers.size()!=0){
             Float result=0f;
             Float maxTemp=0f;
@@ -22,11 +22,11 @@ public class Statistics
                     maxTemp=numbers.get(ii);
                 else if (numbers.get(ii)<minTemp)
                     minTemp=numbers.get(ii);
-                stats.average= result/numbers.size();
-                stats.maximum=maxTemp;
-                stats.minimum=minTem;
+                s.average= result/numbers.size();
+                s.max=maxTemp;
+                s.min=minTem;
                 
             }
-            return stats;
+            return s;
     }
 }
