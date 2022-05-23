@@ -12,5 +12,15 @@ public class StatsChecker{
           this.alerters=alerters;
         }
         
-        public void check
+        public void checkAndAlert(List<float> numbers){
+           float max=numbers.get(0);
+           for(int i=0;i<numbers.size();i++){
+                if(max<numbers.get(i))
+                        max=numbers.get(i);
+           }
+           if(max>thresholdMax){
+                 alerters[0].emailSent=true;
+                 alerters[1].ledGlows=true;
+           }
+        }
 }
