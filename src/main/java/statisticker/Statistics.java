@@ -24,8 +24,7 @@ public class Statistics
                 s.average= result/numbers.size();
                 s.max=maxTemp;
                 s.min=minTem;
-                
             }
-            return s;
-    }
+        }
+        return s;
 }
