@@ -14,8 +14,7 @@ public class Statistics
         if(numbers.size()!=0){
             Float result=0f;
             Float maxTemp=0f;
-            Float minTemp;
-            minTemp=numbers.get(0);
+            Float minTemp=numbers.get(0);
             for(int ii=0;ii<numbers.size();ii++){
                 result+=numbers.get(ii);
                 if(numbers.get(ii)>maxTemp)
