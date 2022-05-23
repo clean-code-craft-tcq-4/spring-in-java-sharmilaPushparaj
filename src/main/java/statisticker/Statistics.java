@@ -4,6 +4,11 @@ import java.util.List;
 
 public class Statistics 
 {
+    public class Stats {
+        float average=Float.NAN;
+        float max=Float.NAN;
+        float min=Float.NAN;
+    }
     public static Stats getStatistics(List<Float> numbers) {
         //implement the computation of statistics here
         Statistics statistics = new Statistics();
