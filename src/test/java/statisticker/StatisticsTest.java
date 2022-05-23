@@ -50,7 +50,6 @@ public class StatisticsTest
         StatsChecker checker = new StatsChecker(maxThreshold, alerters);
 
         Float[] numbers = {11.5f, 6.9f, 7.5f, 6.6f};
-        List<float> numberList = Arrays.asList(numbers);
         checker.checkAndAlert(numbers);
         
         assertTrue(emailAlerter.emailSent);
