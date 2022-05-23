@@ -30,6 +30,10 @@ public class StatisticsTest
         List<___> emptyList = new ArrayList<___>();
 
         Statistics.Stats s = Statistics.getStatistics(emptyList);
+        float epsilon = 0.001f;
+        assertEquals(s.average, Float.NaN, epsilon);
+        assertEquals(s.min, Float.NaN, epsilon);
+        assertEquals(s.max, Float.NaN, epsilon);
 
         //All fields of computedStats (average, max, min) must be
         //Float.NaN (not-a-number), as described in
