@@ -5,10 +5,10 @@ public class StatsChecker{
         EmailAlert emailAlerter = new EmailAlert();
         LEDAlert ledAlerter = new LEDAlert();
         IAlerter alerters[] = null;
-        float thresholdMax=0f;
+        float maxThreshold =0f;
         
-        public StatsChecker(float thresholdMax, IAlerter[] alerters){
-          this.thresholdMax=thresholdMax;
+        public StatsChecker(float maxThreshold, IAlerter[] alerters){
+          this.maxThreshold =maxThreshold;
           this.alerters=alerters;
         }
         
@@ -18,7 +18,7 @@ public class StatsChecker{
                 if(max<numbers.get(i))
                         max=numbers.get(i);
            }
-           if(max>thresholdMax){
+           if(max>maxThreshold){
                  alerters[0].emailSent=true;
                  alerters[1].ledGlows=true;
            }
