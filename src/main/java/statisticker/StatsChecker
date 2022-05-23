@@ -2,5 +2,15 @@ package statisticker;
 import java.util.List;
 
 public class StatsChecker{
-
+        EmailAlert emailAlerter = new EmailAlert();
+        LEDAlert ledAlerter = new LEDAlert();
+        IAlerter alerters[] = null;
+        float thresholdMax=0f;
+        
+        public StatsChecker(float thresholdMax, IAlerter[] alerters){
+          this.thresholdMax=thresholdMax;
+          this.alerters=alerters;
+        }
+        
+        public void check
 }
