@@ -28,7 +28,7 @@ public class Statistics
                 else if (numbers.get(ii)<minTemp){
                     minTemp=numbers.get(ii);
                 }
-                s.average= result/numbers.size();
+                s.average= result/(float)numbers.size();
                 s.max=maxTemp;
                 s.min=minTemp;
             }
